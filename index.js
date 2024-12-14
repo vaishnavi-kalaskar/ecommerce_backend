@@ -10,9 +10,12 @@ const PORT = 1800;
 
 const userModule = require('./routes/userRoute');
 const adminModel=require('./routes/AdminRoute');
+const categarymodel=require('./routes/categaryRoutes');
+
 
 app.use("/api/users",userModule);
 app.use("/api/admin",adminModel);
+app.use("/api/categary",categarymodel);
  
 
  
